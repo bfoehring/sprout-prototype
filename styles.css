@@ -243,6 +243,7 @@ h1 {
 }
 
 .film {
+	display: none;
 	opacity: 0.9;
   	background-color: #eee;
   	height: 100%;
@@ -251,6 +252,7 @@ h1 {
 }
 
 .modal-container {
+	display: none;
 	position: absolute;
 	height: 100%;
 	top: 70px; left: 0; bottom: 0; right: 0;
