@@ -157,6 +157,7 @@ table {
 	font-family: Proxima Nova, sans-serif;
 	font-size: 13px;
 	color: #989898;
+	border-radius: 4px 0px 0px 0px; 
 }
 
 .groups-picker {
