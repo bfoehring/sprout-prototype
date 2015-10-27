@@ -68,22 +68,35 @@ h1 {
 }
 
 .main-nav li{
-	padding-top: 27px;
+	padding-top: 29px;
 	float: left;
-	width: 60px;
+	width: 100px;
 	height: 41px;
 	font-family: Proxima Nova, sans-serif;
 	font-size: 14px;
 	color: #989898;
 	font-weight: 100;
 	cursor: pointer;
-	margin: 0px 40px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	text-align: center;
-	transition: .2s;
+	transition: color .15s ease-in;
 }
 
 .main-nav li:hover {
 	color: #fff;
+}
+
+.main-nav a {
+	display: block;
+	height: 20px;
+	width: 60px;
+	margin: auto;
+	border-bottom: 2px solid #333;
+	top: -4px;
+	transition: border-bottom .15s ease-in;
+}
+
+.main-nav li:hover a {
 	border-bottom: 2px solid #59cb59;
 }
 
@@ -158,7 +171,7 @@ h1 {
 .tertiary-nav {
 	height: 40px;
 	background: #333;
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	right: 0px;
 	font-family: Proxima Nova, sans-serif;
@@ -220,11 +233,9 @@ h1 {
 .film {
 	opacity: 0.9;
   	background-color: #eee;
-  	width: 100%;
   	height: 100%;
-  	position: fixed;
-  	top: 70;
-  	left: 0;
+  	position: absolute;
+  	top: 70px; left: 0; bottom: 0; right: 0;
 }
 
 .modal-container {
@@ -247,7 +258,7 @@ h1 {
 
 .modal-content {
 	width:960px;
-	margin: 60px auto 30px auto;
+	margin: 60px auto 0px auto;
 }
 
 .esc-text {
@@ -262,6 +273,11 @@ table {
 	margin-top: 40px;
 	width: 960px;
 	background: #fff;
+	font-family: Proxima Nova, sans-serif;
+	color: #999;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .1em;
 }
 
 tr {
@@ -271,6 +287,46 @@ tr {
 td {
 	width: 180px;
 	border: 1px solid #ddd;
+	text-align: center;
+	padding: 45px 20px 0px 20px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+td:hover {
+	box-shadow: 0px 0px 7px #ddd;
+}
+
+.fa-user {
+	margin: 0px 10px 50px 10px;
+	color: #999;
+	transition: .2s;
+}
+
+.fa-briefcase {
+	margin: 0px 10px 50px 10px;
+	transition: .2s;
+}
+
+.fa-cc-visa {
+	margin: 0px 20px 50px 20px;
+	transition: .2s;
+}
+
+.fa-comments {
+	margin: 0px 20px 50px 20px;
+	transition: .2s;
+}
+
+.fa-trophy {
+	margin: 0px 30px 50px 30px;
+	transition: .2s ease-in;
+}
+
+/* ICON ==== HOVERS */
+
+td:hover .icon-hover {
+	color: #59cb59;
 }
 
 

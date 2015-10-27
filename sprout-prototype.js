@@ -9,8 +9,8 @@ $(document).ready(function(){
   });
   
   $('.close').click(function(){
-    $('.film').hide();
-  	$('.modal-container').hide();
+    $('.film').fadeOut(150);
+  	$('.modal-container').fadeOut(150);
   });
   
 });
