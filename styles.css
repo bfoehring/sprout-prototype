@@ -51,7 +51,7 @@ table {
 .header {
 	height: 70px;
 	width: 100%;
-	background: #323232;
+	background: #333;
 }
 
 .main-nav {
@@ -150,7 +150,7 @@ table {
 
 .tertiary-nav {
 	height: 40px;
-	background: #323232;
+	background: #333;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
@@ -180,7 +180,7 @@ table {
   color: #989898;
   cursor: pointer;
   font-size: 18px;
-  border-left: 1px solid #111;
+  border-left: 1px solid #1a1a1a;
   height: 28px;
   padding: 12px 20px 0px 20px;
   transition: .2s;
