@@ -298,29 +298,38 @@ td:hover {
 }
 
 .fa-user {
-	margin: 0px 10px 50px 10px;
-	color: #999;
-	transition: .2s;
+	margin: 0px 30px 50px 30px;
+	transition: .15s ease-in;
 }
 
 .fa-briefcase {
-	margin: 0px 10px 50px 10px;
-	transition: .2s;
+	margin: 0px 30px 50px 30px;
+	transition: .15s ease-in;
 }
 
 .fa-cc-visa {
-	margin: 0px 20px 50px 20px;
-	transition: .2s;
+	margin: 0px 30px 50px 30px;
+	transition: .15s ease-in;
 }
 
 .fa-comments {
-	margin: 0px 20px 50px 20px;
-	transition: .2s;
+	margin: 0px 30px 50px 30px;
+	transition: .15s ease-in;
+}
+
+.fa-users {
+	margin: 0px 30px 50px 30px;
+	transition: .15s ease-in;
+}
+
+.fa-tags {
+	margin: 0px 30px 50px 30px;
+	transition: .15s ease-in;
 }
 
 .fa-trophy {
 	margin: 0px 30px 50px 30px;
-	transition: .2s ease-in;
+	transition: .15s ease-in;
 }
 
 /* ICON ==== HOVERS */
