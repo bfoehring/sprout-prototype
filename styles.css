@@ -445,6 +445,10 @@ h2 {
 	cursor: pointer;
 }
 
+.groups-menu li:first-child:hover {
+	border-radius: 4px 0px 0px 0px;
+}
+
 table {
 	margin: 40px 0px 0px 0px;
 	width: 960px;
