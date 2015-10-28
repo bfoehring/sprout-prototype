@@ -55,10 +55,20 @@ h1 {
 	color: #333;
 }
 
+h2 {
+	font-family: Proxima Nova, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	color: #333;
+}
+
 .header {
 	height: 70px;
 	width: 100%;
 	background: #333;
+	position: fixed;
+	top: 0px;
 }
 
 .main-nav {
@@ -111,11 +121,64 @@ h1 {
 	border-bottom: 2px solid #59cb59;
 }
 
+.main-nav li ul {
+	position: absolute;
+	top: 70px;
+	box-shadow: 0px 4px 5px #ddd;
+	z-index: 100;
+}
+
+.main-nav li ul li {
+	width: 200px;
+	height: 15px;
+	float: none;	
+	background: #fff;
+	text-align: left;
+	padding: 15px 0px 15px 15px;
+	transition: .15s;
+}
+
+.main-nav li ul li:hover {
+	background: #333;
+}
+
+.main-nav li ul a {
+	margin: 0;
+	height: 45px;
+	width: 215px;
+	border-bottom: none;
+}
+
+.main-nav li:hover ul a {
+	margin: 0;
+	height: 45px;
+	width: 215px;
+	border-bottom: none;
+}
+
+.dropdown {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity .15s ease-in;
+}
+
+.main-nav li:hover .dropdown {
+	visibility: visible;
+	opacity: 1;
+}
+
+.main-nav li:hover .dropdown-column {
+	display: block;
+	position: absolute;
+	top: 70px;
+	left: 215px;
+}
+
 .logo {
 	height: 52px;
 	width: 30px;
 	float: left;
-	margin: 18px 60px 0px 30px;
+	margin: 18px 50px 0px 30px;
 	cursor: pointer;
 }
 
@@ -246,15 +309,15 @@ h1 {
 	display: none;
 	opacity: 0.9;
   	background-color: #eee;
-  	height: 100%;
-  	position: absolute;
-  	top: 70px; left: 0; bottom: 0; right: 0;
+  	height: calc(100vh - 70px);
+  	position: fixed;
+  	top: 70px; left: 0; bottom: 0; right: 0; 
 }
 
 .modal-container {
 	display: none;
-	position: absolute;
-	height: 100%;
+	position: fixed;
+	height: calc(100vh - 70px);
 	top: 70px; left: 0; bottom: 0; right: 0;
 	opacity: 1;
 }
@@ -283,8 +346,107 @@ h1 {
 	letter-spacing: .1em;
 }
 
+.eng-content {
+	width:960px;
+	float:left;
+	margin: 110px 0px 40px 40px;
+}
+
+.dash-content {
+	width:960px;
+	float:left;
+	margin: 110px 0px 40px 40px;
+}
+
+.message-container {
+	width: 560px;
+	height: 100%;
+	display: block;
+	height: auto;
+	background: #fff;
+	margin-top: 20px;
+	padding: 0px 20px 0px 20px;
+	font-family: Proxima Nova, sans-serif;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+.profile-column {
+	width: 40px;
+	float: left;
+	height: 100%;
+}
+
+.profile-image {
+	width: 40px;
+	height: 40px;
+	background: #ccc;
+}
+
+.message {
+	float: left;
+	border-bottom: 1px solid #eee;
+	padding: 40px 0px 40px 0px;
+}
+
+.message-container ul .message:last-child {
+	border-bottom: none;
+}
+
+.message-column {
+	float: left;
+	width: 500px;
+	margin-left: 20px; 
+}
+
+.message-column p {
+	font-size: 14px;
+	color: #555;
+	line-height: 18px;
+}
+
+.groups-menu-hidden {
+	position: fixed;
+	bottom: -176px;
+	right: 0px;
+	font-family: Proxima Nova, sans-serif;
+	font-size: 14px;
+	color: #999;
+	text-align: left;
+	background: #fff;
+	transition: bottom .2s ease-in-out;
+}
+
+.groups-menu-hidden li {
+	width: 240px;
+	padding: 15px 0px 15px 15px;
+}
+
+.groups-menu {
+	position: fixed;
+	bottom: 40px;
+	right: 0px;
+	font-family: Proxima Nova, sans-serif;
+	font-size: 14px;
+	color: #999;
+	text-align: left;
+	background: #fff;
+	border-radius: 4px 0px 0px 0px;
+}
+
+.groups-menu li {
+	width: 240px;
+	padding: 15px 0px 15px 15px;
+}
+
+.groups-menu li:hover {
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
 table {
-	margin-top: 40px;
+	margin: 40px 0px 0px 0px;
 	width: 960px;
 	background: #fff;
 	font-family: Proxima Nova, sans-serif;

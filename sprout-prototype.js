@@ -12,5 +12,9 @@ $(document).ready(function(){
     $('.film').fadeOut(150);
   	$('.modal-container').fadeOut(150);
   });
+
+  $('.groups-picker').click(function(){
+    $('.groups-menu-hidden').toggleClass('groups-menu');
+  });
   
 });
