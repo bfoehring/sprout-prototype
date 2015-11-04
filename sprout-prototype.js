@@ -42,5 +42,12 @@ $(document).ready(function(){
     $('.compose-draft-active').removeClass('compose-draft-active');
     $('.compose-queue-active').removeClass('compose-queue-active');
   });
-   
+
+  $(document).bind('keydown', function(e) { 
+        if (e.which == 27) {
+            $('.film').fadeOut(150);
+            $('.modal-container').fadeOut(150);
+        }
+  });
+
 });
