@@ -520,7 +520,7 @@ h2 {
 	float: left;
 }
 
-.compose-text-input {
+.compose-text-input[contenteditable=true] {
 	width: 340px;
 	height: 200px;
 	border: none;
@@ -532,6 +532,16 @@ h2 {
 	font-weight: 400;
 	resize: none;
 	float: left;
+	background: #fff;
+	overflow: scroll;
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  color: #bbb;
+  font-style: italic;
+  cursor: text;
+  display: block; /* For Firefox */
 }
 
 .compose-text-input:focus {

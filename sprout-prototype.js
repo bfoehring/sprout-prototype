@@ -42,5 +42,5 @@ $(document).ready(function(){
     $('.compose-draft-active').removeClass('compose-draft-active');
     $('.compose-queue-active').removeClass('compose-queue-active');
   });
-  
+   
 });
