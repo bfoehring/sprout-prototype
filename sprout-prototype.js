@@ -15,6 +15,14 @@ $(document).ready(function(){
 
   $('.groups-picker').click(function(){
     $('.groups-menu-hidden').toggleClass('groups-menu');
+    $('.compose-togo-container').removeClass('compose-togo-container');
+    $('.compose-active').removeClass('compose-active');
+  });
+
+  $('.compose').click(function(){
+    $('.compose-togo-container-hidden').toggleClass('compose-togo-container');
+    $('.compose').toggleClass('compose-active');
+    $('.groups-menu').removeClass('groups-menu');
   });
   
 });

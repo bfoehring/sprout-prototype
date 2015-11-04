@@ -227,6 +227,22 @@ h2 {
 	color: #fff;
 }
 
+.compose-active {
+	padding-top: 26px;
+	font-size: 20px;
+	float: right;
+	height: 44px;
+	width: 45px;
+	color: #59cb59;
+	cursor: pointer;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.compose-active:hover {
+	color: #59cb59;
+}
+
 .search {
 	padding-top: 25px;
 	font-size: 20px;
@@ -252,7 +268,8 @@ h2 {
 	font-family: Proxima Nova, sans-serif;
 	font-size: 13px;
 	color: #989898;
-	border-radius: 4px 0px 0px 0px; 
+	border-radius: 4px 0px 0px 0px;
+	z-index: 1000; 
 }
 
 .groups-picker {
@@ -311,7 +328,8 @@ h2 {
   	background-color: #eee;
   	height: calc(100vh - 70px);
   	position: fixed;
-  	top: 70px; left: 0; bottom: 0; right: 0; 
+  	top: 70px; left: 0; bottom: 0; right: 0;
+  	z-index: 9000; 
 }
 
 .modal-container {
@@ -320,6 +338,7 @@ h2 {
 	height: calc(100vh - 70px);
 	top: 70px; left: 0; bottom: 0; right: 0;
 	opacity: 1;
+	z-index: 9000;
 }
 
 .close {
@@ -415,6 +434,7 @@ h2 {
 	text-align: left;
 	background: #fff;
 	transition: bottom .2s ease-in-out;
+	z-index: 1000; 
 }
 
 .groups-menu-hidden li {
@@ -448,6 +468,150 @@ h2 {
 
 .groups-menu li:first-child:hover {
 	border-radius: 4px 0px 0px 0px;
+}
+
+.compose-togo-container-hidden {
+	height: 100%;
+	width: 400px;
+	position: absolute;
+	bottom: 0px;
+	right: -400px;
+	background: #eee;
+	box-shadow: -2px 0px 15px #ddd;
+	transition: right .15s ease-in-out;
+}
+
+.compose-togo-container {
+	height: 100%;
+	width: 400px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: #eee;
+	box-shadow: -2px 0px 15px #ddd;
+}
+
+.compose-heading {
+	margin-top: 70px;
+	width: 340px;
+	padding: 30px;
+	font-size: 14px;
+	font-family: Proxima Nova, sans-serif;
+	font-color: #333;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	border-bottom: solid 1px #ddd;
+	float: left;
+}
+
+.compose-profile-picker {
+	height: 60px;
+	width: 400px;
+	background: #e6e6e6;
+	float: left;
+}
+
+.compose-text-input {
+	width: 340px;
+	height: 200px;
+	border: none;
+	padding: 30px;
+	font-size: 16px;
+	font-family: Proxima Nova, sans-serif;
+	font-color: #333;
+	line-height: 22px;
+	font-weight: 400;
+	resize: none;
+	float: left;
+}
+
+.compose-text-input:focus {
+	outline: none !important;
+    border:1px solid #59cb59;
+    width: 338px;
+	height: 198px;
+}
+
+.compose-message-types {
+	margin: 20px 30px 0px 30px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	float: left;
+	width: 340px;
+	font-family: Proxima Nova, sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+.compose-draft {
+	float: left;
+	width: 113px;
+	height: 24px;
+	padding-top: 13px;
+	border-radius: 4px 0px 0px 4px;
+	background: #eee;
+	color: #333;
+	cursor: pointer;
+	transition: background .2s;
+}
+
+.compose-draft:hover {
+	background: #ddd;
+}
+
+.compose-queue {
+	float: left;
+	width: 112px;
+	height: 24px;
+	padding-top: 13px;
+	border-left: 1px solid #ddd;
+	background: #eee;
+	color: #333;
+	cursor: pointer;
+	transition: background .2s
+}
+
+.compose-queue:hover {
+	background: #ddd;
+}
+
+.compose-schedule {
+	float: left;
+	width: 113px;
+	height: 24px;
+	padding-top: 13px;
+	border-left: 1px solid #ddd;
+	border-radius: 0px 4px 4px 0px;
+	background: #eee;
+	color: #333;
+	cursor: pointer;
+	transition: background .2s;
+}
+
+.compose-schedule:hover {
+	background: #ddd;
+}
+
+.compose-togo-button {
+	background: #59cb59;
+	width: 320px;
+	text-align: center;
+	margin: 20px 30px 20px 30px;
+	border-radius: 4px;
+	padding: 10px;
+	font-size: 13px;
+	font-family: Proxima Nova, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	cursor: pointer;
+	float: left;
+	transition: background .2s;
+}
+
+.compose-togo-button:hover {
+	background: #2bb656;
 }
 
 table {
