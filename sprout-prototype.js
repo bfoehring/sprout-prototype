@@ -24,5 +24,23 @@ $(document).ready(function(){
     $('.compose').toggleClass('compose-active');
     $('.groups-menu').removeClass('groups-menu');
   });
+
+  $('.compose-draft').click(function(){
+    $('.compose-draft').toggleClass('compose-draft-active');
+    $('.compose-queue-active').removeClass('compose-queue-active');
+    $('.compose-schedule-active').removeClass('compose-schedule-active');
+  });
+
+  $('.compose-queue').click(function(){
+    $('.compose-queue').toggleClass('compose-queue-active');
+    $('.compose-draft-active').removeClass('compose-draft-active');
+    $('.compose-schedule-active').removeClass('compose-schedule-active');
+  });
+
+  $('.compose-schedule').click(function(){
+    $('.compose-schedule').toggleClass('compose-schedule-active');
+    $('.compose-draft-active').removeClass('compose-draft-active');
+    $('.compose-queue-active').removeClass('compose-queue-active');
+  });
   
 });
