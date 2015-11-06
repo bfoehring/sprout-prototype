@@ -14,15 +14,38 @@ $(document).ready(function(){
   });
 
   $('.groups-picker').click(function(){
-    $('.groups-menu-hidden').toggleClass('groups-menu');
-    $('.compose-togo-container').removeClass('compose-togo-container');
-    $('.compose-active').removeClass('compose-active');
+    if($('.compose-minimized-hidden').hasClass('compose-minimized')){
+      $('.groups-menu-hidden').toggleClass('groups-menu');
+    } else {
+      $('.groups-menu-hidden').toggleClass('groups-menu');
+      $('.compose-togo-container').removeClass('compose-togo-container');
+      $('.compose-active').removeClass('compose-active');
+    }
   });
 
   $('.compose').click(function(){
+    if($('.compose-minimized-hidden').hasClass('compose-minimized')){
+
+    } else{
+      $('.compose-togo-container-hidden').toggleClass('compose-togo-container');
+      $('.compose').toggleClass('compose-active');
+      $('.groups-menu').removeClass('groups-menu');
+    }
+  });
+
+  $('.heading-close').click(function(){
     $('.compose-togo-container-hidden').toggleClass('compose-togo-container');
     $('.compose').toggleClass('compose-active');
-    $('.groups-menu').removeClass('groups-menu');
+  });
+
+  $('.heading-min').click(function(){
+    $('.compose-togo-container-hidden').toggleClass('compose-togo-container');
+    $('.compose-minimized-hidden').toggleClass('compose-minimized');
+  });
+
+  $('.compose-minimized-hidden').click(function(){
+    $('.compose-minimized-hidden').toggleClass('compose-minimized');
+    $('.compose-togo-container-hidden').toggleClass('compose-togo-container');
   });
 
   $('.compose-draft').click(function(){
@@ -41,6 +64,11 @@ $(document).ready(function(){
     $('.compose-schedule').toggleClass('compose-schedule-active');
     $('.compose-draft-active').removeClass('compose-draft-active');
     $('.compose-queue-active').removeClass('compose-queue-active');
+  });
+
+  $('.close-min').on('click', function(){
+      $('.compose-togo-container-hidden').toggleClass('compose-togo-container');
+      $('.compose').removeClass('compose-active');
   });
 
   $(document).bind('keydown', function(e) { 

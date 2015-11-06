@@ -264,14 +264,12 @@ h2 {
 
 .tertiary-nav {
 	height: 40px;
-	background: #333;
 	position: fixed;
 	bottom: 0px;
 	right: 0px;
 	font-family: Proxima Nova, sans-serif;
 	font-size: 13px;
 	color: #989898;
-	border-radius: 4px 0px 0px 0px;
 	z-index: 1000; 
 }
 
@@ -283,6 +281,8 @@ h2 {
 	cursor: pointer;
 	height: 26px;
 	padding: 14px 20px 0px 20px;
+	background: #333;
+	border-radius: 4px 0px 0px 0px;
 	transition: .2s;
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
@@ -302,6 +302,7 @@ h2 {
   	border-left: 1px solid #1a1a1a;
   	height: 28px;
   	padding: 12px 20px 0px 20px;
+  	background: #333;
   	transition: .2s;
 }
 
@@ -326,6 +327,77 @@ h2 {
 
 .fa-angle-up.down-groups {
 	margin-left: 20px;
+}
+
+.compose-minimized-hidden {
+	margin: 0px 20px 0px 0px;
+	float: right;
+	color: #989898;
+	font-size: 13px;
+	cursor: pointer;
+	height: 40px;
+	background: #333;
+	border-radius: 4px 4px 0px 0px;
+	padding: 0px 10px 0px 20px;
+	bottom: -40px;
+	position: relative;
+	transition: color .2s, bottom .1s ease-in-out;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.compose-minimized {
+	margin: 0px 20px 0px 0px;
+	float: right;
+	color: #989898;
+	font-size: 13px;
+	cursor: pointer;
+	height: 40px;
+	background: #333;
+	border-radius: 4px 4px 0px 0px;
+	padding: 0px 10px 0px 20px;
+	bottom: 0px;
+	position: relative;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.compose-minimized:hover {
+	color: #fff;
+}
+
+.close-min {
+	height: 40px;
+	float: right;
+	color: #989898;
+	text-align: center;
+	padding: 14px 10px 0px 10px;
+	transition: color .2s;
+}
+
+.compose-minimized:hover .close-min {
+	color: #fff;
+}
+
+.compose-minimized:hover .close-min:hover {
+	color: red;
+}
+
+.unmin {
+	height: 40px;
+	cursor: pointer;
+	float: right;
+	margin-left: 30px;
+	text-align: right;
+	padding: 14px 5px 0px 0px;
+}
+
+.message-min-title {
+	float: left;
+	height: 40px;
+	padding-top: 14px;
 }
 
 .film {
@@ -505,7 +577,7 @@ h2 {
 	padding: 30px;
 	font-size: 14px;
 	font-family: Proxima Nova, sans-serif;
-	font-color: #333;
+	color: #333;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .1em;
@@ -688,6 +760,17 @@ h2 {
 
 .compose-togo-button:hover {
 	background: #2bb656;
+}
+
+.heading-min {
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+
+.heading-close {
+	cursor: pointer;
+	float: right;
 }
 
 table {
